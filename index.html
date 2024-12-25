@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="icon" href="./assets/img/White.png">
+  <title>Coming Soon | Drashya Desgin Studio</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            'Montserrat': ['Montserrat'],
+            'Noto-Sans': ['"Noto Sans"'],
+            'Comforter-Brush': ['"Comforter Brush"']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      /* cursor:po; */
+
+    }
+
+    /* .comming{
+     position: relative;
+     font-size: 6em;
+     color: black;
+   }
+
+   .comming::before{
+     content: attr(data-text);
+     position: absolute;
+     color: white;
+     width: 350px; 
+     overflow: hidden;
+     white-space: nowrap;
+     animation: animate 8s linear infinite;
+     height: 70px;
+     filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+
+   }
+
+   @keyframes animate
+   {
+     0%,10%,100%{
+       width: 0;
+     }
+     70%,90%{
+       width: 100%;
+     }
+   } */
+
+
+
+    .hover-effact:hover {
+      color: #25D366;
+    }
+
+    .insta:hover {
+      color: #afa4a4;
+    }
+
+
+    /* WHATSAPP HOVER EFFECT */
+    .dropdown {
+      display: inline-block;
+    }
+
+    .dropdown button {
+      background-color: hsl(0, 0%, 80%);
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      cursor: pointer;
+
+    }
+
+    .dropdown_a {
+      display: block;
+      color: black;
+      text-decoration: none;
+      padding: 10px 15px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .dropdown .content {
+      display: none;
+      position: absolute;
+      background-color: hsl(0, 0%, 95%);
+      min-width: 100px;
+      box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+      margin-left: -220px;
+      border-radius: 25px;
+
+    }
+
+    .dropdown:hover .content {
+      display: flex;
+      /* margin-left: 60px; */
+
+    }
+
+    .dropdown:hover button {
+      background-color: hsl(0, 0%, 70%);
+    }
+
+    /* PHOTO HOVER EFFECT */
+
+    .icon_image {
+      width: 30px;
+      border-radius: 50px;
+      margin-right: 10px;
+    }
+
+
+    .insta_hover:hover {
+      background: #f09433;
+      background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
+      border-radius: 25px;
+    }
+
+    .email_hover:hover {
+      color: red;
+    }
+
+    .studio {}
+
+
+    @media only screen and (max-width: 650px) {
+      .dropdown .content {
+        display: none;
+        background-color: hsl(221.25deg 78.05% 51.76%);
+        min-width: 100px;
+        box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
+        color: white !important;
+
+      }
+
+      .dropdown_a {
+      display: block;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding: 10px 15px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+      .icon_image {
+        width: 30px;
+        height: auto;
+        border-radius: 50px;
+        margin-right: 10px;
+      }
+
+    }
+    @media only screen and (max-width: 760px){
+      .countdownstyle{
+    justify-content: center !important;
+}
+
+.copy{
+  text-align: center !important;
+}
+    }
+
+    .cursor {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      border: 1px solid #c6c6c6;
+      border-radius: 50%;
+      left: 0;
+      top: 0;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: .1s;
+    }
+
+    .cursor2 {
+      position: fixed;
+      width: 8px;
+      height: 8px;
+      background-color: #c6c6c6;
+      border-radius: 50%;
+      left: 0;
+      top: 0;
+      pointer-events: none;
+      transform: translate(-50%, -50%);
+      transition: .15s;
+    }
+
+    .content:hover~.cursor {
+      transform: translate(-50%, -50%) scale(1.5);
+      background-color: #ff0000;
+      opacity: .5;
+    }
+
+    .content:hover~.cursor2 {
+      opacity: 0;
+    }
+
+
+
+
+
+
+    @layer demo, countdown;
+
+@layer countdown{
+  .countdown {
+    width: fit-content;
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+    gap: 1rem;
+  }
+  .countdown > .part {
+    display: grid;
+    gap: 0.5rem;
+  }
+  .countdown > .part > .number {
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    border: 1px solid hsl(0 0% 50% / .5);
+    font-size: 1.0rem;
+    position: relative
+  }
+  .countdown > .part.days { --num: 365 }
+  .countdown > .part.hours { --num: 24 }
+  .countdown > .part:where(.minutes, .seconds) { --num: 60 }
+  .countdown > .part > .number::after{
+    content: "";
+    position: absolute;
+    inset: calc(var(--border-size) * -0.5);
+    border-radius: inherit;
+
+    --degree: calc(360deg / var(--num) * (var(--num) - var(--value,0)));
+    background-image: conic-gradient(var(--accent) var(--degree), transparent calc(var(--degree) + 0.1deg));
+
+    --border-size: 4px;  
+    --mask-image: radial-gradient(100% 100%, transparent calc(50% - var(--border-size)), black calc(50% - var(--border-size) + 1px));
+    -webkit-mask-image: var(--mask-image);
+    mask-image: var(--mask-image);
+  }
+  .countdown > .part > .text {
+    text-align: center;
+    opacity: 0.75
+  }
+}
+@layer demo {
+  * { box-sizing: border-box }
+  body {
+    background-color: #060D1F;
+    color: #FEFEFE;
+    /* font-family: Georgia, 'Times New Roman', Times, serif !important; */
+    text-align: center;
+  }
+  
+}
+
+
+.countdownstyle{
+  text-align: right;
+    place-content: center;
+    /* margin-top: 56px; */
+    font-size: 10px;
+    justify-content: flex-end;
+}
+
+.copy{
+  text-align: right;
+  margin-top: 50px;
+}
+
+
+  </style>
+
+
+</head>
+
+<body class="font-Noto-Sans">
+
+
+  <!-- Header -->
+  <header class="w-full bg-[url('assets/img/sofa.jpg')] bg-cover bg-bottom">
+    <div class="w-full min-h-screen md:w-1/2 bg-dark-to-b p-10 flex" style="background-color: rgba(0, 0, 0, 0.755);">
+      <div class="w-full text-center my-auto ">
+        <div class="studio">
+          <h1 class="font-bold text-5xl font-Comforter-Brush text-blue-600 mb-10 md:text-right studio ">Drashya Desgin
+            Studio.</h1>
+        </div>
+        <h6 style="filter: drop-shadow(0 0 20px #ffffff) drop-shadow(0 0 50px #000000);"
+          class=" font-Montserrat font-bold uppercase text-4xl md:text-5xl lg:text-6xl mb-14 md:-mr-20 text-white md:text-right">
+          Coming <span class="text-white/90 md:-mr-20 ">soon</span></h6>
+        <div class="content">
+          <!-- Content -->
+          <p style="font-family: Georgia, 'Times New Roman', Times, serif;"
+            class=" text-base mb-10 text-gray-200 md:text-right ">Welcome to Drashya Desgin Studio, where we transform
+            spaces into stunning reflections of your unique style and personality. Our team of interior designers is
+            passionate about creating beautiful, functional environments that elevate your everyday life. </p>
+        </div>
+        <!-- Social media -->
+        <div class="w-full text-right flex countdownstyle place-content"> 
+          <time class="countdown" date-time="2025-01-25 00:00:00" style="--accent:  hsl(221.25deg 78.05% 51.76%)"></time> 
+        </div>
+        <div class="w-full text-left flex mt-5">
+          <ul class="w-full flex place-content-center md:place-content-end gap-10 mx-auto text-gray-500">
+            <li>
+              <a href="https://www.facebook.com/share/fKzciX3YhXjHqbxA/?mibextid=qi2Omg" target="_blank"
+                class="text-lg hover:text-blue-500">
+                <i class="fa-brands fa-facebook"></i> </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/drashyadesignstudio/?utm_source=qr&igsh=NzBmaTNxOWphb2tu"  target="_blank"
+                class="text-lg  insta ">
+                <i class="fab fa-instagram insta_hover"></i>
+              </a>
+            </li>
+
+
+            <li>
+              <a href="mailto:drashyadesignstudio@gmail.com" target="_blank" class="text-lg hover:text-red-500 ">
+                <i class="fa-regular fa-envelope email_hover"></i>
+              </a>
+            </li>
+
+            <div class="dropdown">
+              <li>
+                <a href="#" class="text-lg  hover-effact">
+                  <i class="fa-brands fa-whatsapp fa-lg"></i>
+                </a>
+              </li>
+              <div class="content">
+                <a href="https://wa.me/7285808571" target="_blank" class="dropdown_a" style="display: flex;"> <img
+                    src="./assets/img/test3.jpg" class="icon_image">Rahul </a>
+                <a href="https://wa.me/8140268377" target="_blank" class="dropdown_a" style="display: flex;"> <img
+                    src="./assets/img/test2.jpg" class="icon_image">Smit </a>
+                <a href="https://wa.me/9099190917" target="_blank" class="dropdown_a" style="display: flex;"> <img
+                    src="./assets/img/test1.jpg" class="icon_image">Khushal </a>
+              </div>
+            </div>
+          </ul>
+        </div>
+        <div class="copy">
+          <p class="copy ">Copyright © 2024 <span><a style="color:hsl(221.25deg 78.05% 51.76%); " 
+            href="https://cypersoft.com" target="_blank">Cypersoft</a></span>. All rights reserved.</p>
+          </div>
+      </div>
+    </div>
+  </header>
+
+
+  <div class="cursor"></div>
+  <div class="cursor2"></div>
+
+  <script>
+    var cursor = document.querySelector(".cursor");
+    var cursor2 = document.querySelector(".cursor2");
+    document.addEventListener("mousemove", function (e) {
+      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
+    });
+
+
+    class Countdown {
+  constructor(el){
+    this.el = el;
+    this.targetDate = new Date(el.getAttribute("date-time"));
+    this.createCountDownParts()
+    this.countdownFunction();
+    this.countdownLoopId = setInterval(this.countdownFunction.bind(this), 1000)
+  }
+  createCountDownParts(){
+    ["days", "hours", "minutes", "seconds"].forEach(part => {
+      const partEl = document.createElement("div");
+      partEl.classList.add("part", part);
+      const textEl = document.createElement("div");
+      textEl.classList.add("text");
+      textEl.innerText = part;
+      const numberEl = document.createElement("div");
+      numberEl.classList.add("number");
+      numberEl.innerText = 0;
+      partEl.append(numberEl, textEl);
+      this.el.append(partEl);
+      this[part] = numberEl;
+    })
+  }
+
+  countdownFunction(){
+    const currentDate = new Date();    
+    if(currentDate > this.targetDate) return clearInterval(this.intervalId);
+    const remaining = this.getRemaining(this.targetDate, currentDate);
+    Object.entries(remaining).forEach(([part,value]) => {
+      this[part].style.setProperty("--value", value)
+      this[part].innerText = value
+    })  
+  }
+  
+  getRemaining(target, now){
+    let seconds = Math.floor((target - (now))/1000);
+    let minutes = Math.floor(seconds/60);
+    let hours = Math.floor(minutes/60);
+    let days = Math.floor(hours/24);
+    hours = hours-(days*24);
+    minutes = minutes-(days*24*60)-(hours*60);
+    seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
+    return { days, hours, minutes, seconds }      
+  }
+
+}
+
+const countdownEls= document.querySelectorAll(".countdown") || [];
+countdownEls.forEach(countdownEl => new Countdown(countdownEl))
+
+  </script>
+</body>
+
+</html>
