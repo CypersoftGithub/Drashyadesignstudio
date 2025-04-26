@@ -1,441 +1,535 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="icon" href="./assets/img/White.png">
-  <title>Coming Soon | Drashya Design Studio</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap" rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Comforter+Brush&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-  <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: {
-            'Montserrat': ['Montserrat'],
-            'Noto-Sans': ['"Noto Sans"'],
-            'Comforter-Brush': ['"Comforter Brush"']
-          }
-        }
-      }
-    }
-  </script>
-  <style>
-    body {
-      /* cursor:po; */
-
-    }
-
-    /* .comming{
-     position: relative;
-     font-size: 6em;
-     color: black;
-   }
-
-   .comming::before{
-     content: attr(data-text);
-     position: absolute;
-     color: white;
-     width: 350px; 
-     overflow: hidden;
-     white-space: nowrap;
-     animation: animate 8s linear infinite;
-     height: 70px;
-     filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
-
-   }
-
-   @keyframes animate
-   {
-     0%,10%,100%{
-       width: 0;
-     }
-     70%,90%{
-       width: 100%;
-     }
-   } */
-
-
-
-    .hover-effact:hover {
-      color: #25D366;
-    }
-
-    .insta:hover {
-      color: #afa4a4;
-    }
-
-
-    /* WHATSAPP HOVER EFFECT */
-    .dropdown {
-      display: inline-block;
-    }
-
-    .dropdown button {
-      background-color: hsl(0, 0%, 80%);
-      color: white;
-      padding: 10px 15px;
-      border: none;
-      cursor: pointer;
-
-    }
-
-    .dropdown_a {
-      display: block;
-      color: black;
-      text-decoration: none;
-      padding: 10px 15px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-
-    .dropdown .content {
-      display: none;
-      position: absolute;
-      background-color: hsl(0, 0%, 95%);
-      min-width: 100px;
-      box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
-      margin-left: -220px;
-      border-radius: 25px;
-
-    }
-
-    .dropdown:hover .content {
-      display: flex;
-      /* margin-left: 60px; */
-
-    }
-
-    .dropdown:hover button {
-      background-color: hsl(0, 0%, 70%);
-    }
-
-    /* PHOTO HOVER EFFECT */
-
-    .icon_image {
-      width: 30px;
-      border-radius: 50px;
-      margin-right: 10px;
-    }
-
-
-    .insta_hover:hover {
-      background: #f09433;
-      background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-      background: -webkit-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-      background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09433', endColorstr='#bc1888', GradientType=1);
-      border-radius: 25px;
-    }
-
-    .email_hover:hover {
-      color: red;
-    }
-
-    .studio {}
-
-
-    @media only screen and (max-width: 650px) {
-      .dropdown .content {
-        display: none;
-        background-color: hsl(221.25deg 78.05% 51.76%);
-        min-width: 100px;
-        box-shadow: 2px 2px 5px hsla(0, 0%, 0%, 0.8);
-        color: white !important;
-
-      }
-
-      .dropdown_a {
-      display: block;
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-      padding: 10px 15px;
-      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    }
-      .icon_image {
-        width: 30px;
-        height: auto;
-        border-radius: 50px;
-        margin-right: 10px;
-      }
-
-    }
-    @media only screen and (max-width: 760px){
-      .countdownstyle{
-    justify-content: center !important;
-}
-
-.copy{
-  text-align: center !important;
-}
-    }
-
-    .cursor {
-      position: fixed;
-      width: 50px;
-      height: 50px;
-      border: 1px solid #c6c6c6;
-      border-radius: 50%;
-      left: 0;
-      top: 0;
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      transition: .1s;
-    }
-
-    .cursor2 {
-      position: fixed;
-      width: 8px;
-      height: 8px;
-      background-color: #c6c6c6;
-      border-radius: 50%;
-      left: 0;
-      top: 0;
-      pointer-events: none;
-      transform: translate(-50%, -50%);
-      transition: .15s;
-    }
-
-    .content:hover~.cursor {
-      transform: translate(-50%, -50%) scale(1.5);
-      background-color: #ff0000;
-      opacity: .5;
-    }
-
-    .content:hover~.cursor2 {
-      opacity: 0;
-    }
-
-
-
-
-
-
-    @layer demo, countdown;
-
-@layer countdown{
-  .countdown {
-    width: fit-content;
-    display: inline-grid;
-    grid-auto-flow: column;
-    grid-auto-columns: 1fr;
-    gap: 1rem;
-  }
-  .countdown > .part {
-    display: grid;
-    gap: 0.5rem;
-  }
-  .countdown > .part > .number {
-    aspect-ratio: 1;
-    display: grid;
-    place-items: center;
-    border-radius: 50%;
-    border: 1px solid hsl(0 0% 50% / .5);
-    font-size: 1.0rem;
-    position: relative
-  }
-  .countdown > .part.days { --num: 365 }
-  .countdown > .part.hours { --num: 24 }
-  .countdown > .part:where(.minutes, .seconds) { --num: 60 }
-  .countdown > .part > .number::after{
-    content: "";
-    position: absolute;
-    inset: calc(var(--border-size) * -0.5);
-    border-radius: inherit;
-
-    --degree: calc(360deg / var(--num) * (var(--num) - var(--value,0)));
-    background-image: conic-gradient(var(--accent) var(--degree), transparent calc(var(--degree) + 0.1deg));
-
-    --border-size: 4px;  
-    --mask-image: radial-gradient(100% 100%, transparent calc(50% - var(--border-size)), black calc(50% - var(--border-size) + 1px));
-    -webkit-mask-image: var(--mask-image);
-    mask-image: var(--mask-image);
-  }
-  .countdown > .part > .text {
-    text-align: center;
-    opacity: 0.75
-  }
-}
-@layer demo {
-  * { box-sizing: border-box }
-  body {
-    background-color: #060D1F;
-    color: #FEFEFE;
-    /* font-family: Georgia, 'Times New Roman', Times, serif !important; */
-    text-align: center;
-  }
-  
-}
-
-
-.countdownstyle{
-  text-align: right;
-    place-content: center;
-    /* margin-top: 56px; */
-    font-size: 10px;
-    justify-content: flex-end;
-}
-
-.copy{
-  text-align: right;
-  margin-top: 50px;
-}
-
-
-  </style>
-
-
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <title>Drashya Design Studio</title>
+  <link rel="shortcut icon" href="img/favicon.png" />
+  <link rel="stylesheet" href="css/plugins.css" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
-<body class="font-Noto-Sans">
-
-
-  <!-- Header -->
-  <header class="w-full bg-[url('assets/img/sofa.jpg')] bg-cover bg-bottom">
-    <div class="w-full min-h-screen md:w-1/2 bg-dark-to-b p-10 flex" style="background-color: rgba(0, 0, 0, 0.755);">
-      <div class="w-full text-center my-auto ">
-        <div class="studio">
-          <h1 class="font-bold text-5xl font-Comforter-Brush text-blue-600 mb-10 md:text-right studio ">Drashya Design
-            Studio.</h1>
-        </div>
-        <h6 style="filter: drop-shadow(0 0 20px #ffffff) drop-shadow(0 0 50px #000000);"
-          class=" font-Montserrat font-bold uppercase text-4xl md:text-5xl lg:text-6xl mb-14 md:-mr-20 text-white md:text-right">
-          Coming <span class="text-white/90 md:-mr-20 ">soon</span></h6>
-        <div class="content">
-          <!-- Content -->
-          <p style="font-family: Georgia, 'Times New Roman', Times, serif;"
-            class=" text-base mb-10 text-gray-200 md:text-right ">Welcome to Drashya Design Studio, where we transform
-            spaces into stunning reflections of your unique style and personality. Our team of interior designers is
-            passionate about creating beautiful, functional environments that elevate your everyday life. </p>
-        </div>
-        <!-- Social media -->
-        <div class="w-full text-right flex countdownstyle place-content"> 
-          <time class="countdown" date-time="2025-01-25 00:00:00" style="--accent:  hsl(221.25deg 78.05% 51.76%)"></time> 
-        </div>
-        <div class="w-full text-left flex mt-5">
-          <ul class="w-full flex place-content-center md:place-content-end gap-10 mx-auto text-gray-500">
-            <li>
-              <a href="https://www.facebook.com/share/fKzciX3YhXjHqbxA/?mibextid=qi2Omg" target="_blank"
-                class="text-lg hover:text-blue-500">
-                <i class="fa-brands fa-facebook"></i> </a>
-            </li>
-
-            <li>
-              <a href="https://www.instagram.com/drashyadesignstudio/?utm_source=qr&igsh=NzBmaTNxOWphb2tu"  target="_blank"
-                class="text-lg  insta ">
-                <i class="fab fa-instagram insta_hover"></i>
-              </a>
-            </li>
-
-
-            <li>
-              <a href="mailto:drashyadesignstudio@gmail.com" target="_blank" class="text-lg hover:text-red-500 ">
-                <i class="fa-regular fa-envelope email_hover"></i>
-              </a>
-            </li>
-
-            <div class="dropdown">
-              <li>
-                <a href="#" class="text-lg  hover-effact">
-                  <i class="fa-brands fa-whatsapp fa-lg"></i>
-                </a>
-              </li>
-              <div class="content">
-                <a href="https://wa.me/7285808571" target="_blank" class="dropdown_a" style="display: flex;"> <img
-                    src="./assets/img/test3.jpg" class="icon_image">Rahul </a>
-                <a href="https://wa.me/8140268377" target="_blank" class="dropdown_a" style="display: flex;"> <img
-                    src="./assets/img/test2.jpg" class="icon_image">Smit </a>
-                <a href="https://wa.me/9099190917" target="_blank" class="dropdown_a" style="display: flex;"> <img
-                    src="./assets/img/test1.jpg" class="icon_image">Khushal </a>
+<body>
+  <!-- Preloader -->
+  <div class="preloader-bg"></div>
+  <div id="preloader">
+    <div id="preloader-status">
+      <div class="preloader-position loader"><span></span></div>
+    </div>
+  </div>
+  <!-- Progress scroll totop -->
+  <div class="progress-wrap cursor-pointer">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+    </svg>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <!-- Logo -->
+      <div class="logo-wrapper">
+        <a class="logo" href="index.html">
+          <img src="./img/whitelogo.png" class="logo-img" alt="" />
+        </a>
+        <!-- <a class="logo" href="index.html"> <h2>BAUEN</h2> </a> -->
+      </div>
+      <!-- Button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="ti-menu"></i></span>
+      </button>
+      <!-- Menu -->
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="services.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="process.html">Process</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Slider -->
+  <header class="header slider-fade">
+    <div class="owl-carousel owl-theme">
+      <!-- The opacity on the image is made with "data-overlay-dark="number". You can change it using the numbers 0-9. -->
+      <div class="text-start item bg-img" data-overlay-dark="3" data-background="img/slider/1.jpg">
+        <div class="v-middle caption mt-30">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <h1>Innovate Desing in India</h1>
+                <p>
+                  Welcome to Drashya Design Studio, 
+                  <br />where creativity meets functionality.
+                </p>
+                <div class="butn-light mt-30 mb-30">
+                  <a href="contact.html" target="_blank"><span>Contact Us</span></a>
+                </div>
               </div>
             </div>
-          </ul>
-        </div>
-        <div class="copy">
-          <p class="copy ">Copyright © 2024 <span><a style="color:hsl(221.25deg 78.05% 51.76%); " 
-            href="https://cypersoft.com" target="_blank">Cypersoft</a></span>. All rights reserved.</p>
           </div>
+        </div>
+      </div>
+      <div class="text-left item bg-img" data-overlay-dark="4" data-background="img/slider/2.jpg">
+        <div class="v-middle caption mt-30">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-7">
+                <h1>Innovate Desing in Morbi</h1>   
+                <p>
+                  We specialize in designing innovative, functional, 
+                  <br />and aesthetically captivating spaces that stand the test of time.
+                </p>
+                <div class="butn-light mt-30 mb-30">
+                  <a href="contact.html" target="_blank"><span>Contact Us</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
+  <!-- Content -->
+  <div class="content-wrapper">
+    <!-- Lines -->
+    <section class="content-lines-wrapper">
+      <div class="content-lines-inner">
+        <div class="content-lines"></div>
+      </div>
+    </section>
+    <!-- About -->
+    <section class="about section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 mb-30 animate-box" data-animate-effect="fadeInUp">
+            <h2 class="section-title">About <span>Drashya</span></h2>
+            <p>
+              Drashya design studio is firm that approaches each project with a highly individual creative strategy and
+              artistic sense of aesthetics that go beyond conventional design solutions. 
+            </p>
+            <p>
+              Each exceptional design solution is an original and always mindful of the client's taste and needs. Each
+              object within the space is carefully chosen or custom made. The firm's meticulously crafted interiors
+              surprise and delight with dramatic contrasts — in colors, textures, shapes - always in harmony with the
+              whole composition.
+            </p>
+            <p>
+              The full-service design practice specializes in complete renovations and build-outs, offering a
+              comprehensive design journey
+            </p>
+          </div>
+          <div class="col-md-6 animate-box" data-animate-effect="fadeInUp">
+            <div class="about-img">
+              <div class="img">
+                <img src="img/1.jpg" class="img-fluid" alt="" />
+              </div>
+              <div class="about-img-2 about-buro">Drashya Office</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Projects -->
+    <section class="projects section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-title">Our <span>Projects</span></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="position-re o-hidden">
+                  <img src="img/projects/1.jpg" alt="" />
+                </div>
+                <div class="con">
+                  <h6><a href="projects.html">Interior</a></h6>
+                  <h5><a href="projects.html">Elora Height</a></h5>
+                  <div class="line"></div>
+                  <a href="projects.html"><i class="ti-arrow-right"></i></a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="position-re o-hidden">
+                  <img src="img/projects/2.jpg" alt="" />
+                </div>
+                <div class="con">
+                  <h6><a href="projects.html">Interior</a></h6>
+                  <h5><a href="projects.html">Himalaya Office</a></h5>
+                  <div class="line"></div>
+                  <a href="projects.html"><i class="ti-arrow-right"></i></a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="position-re o-hidden">
+                  <img src="img/projects/Gokuldham-Society/1.jpg" alt="" />
+                </div>
+                <div class="con">
+                  <h6><a href="projects.html">Interior</a></h6>
+                  <h5><a href="projects.html">Gokuldham Society</a></h5>
+                  <div class="line"></div>
+                  <a href="projects.html"><i class="ti-arrow-right"></i></a>
+                </div>
+              </div>
+              <div class="item">
+                <div class="position-re o-hidden">
+                  <img src="img/projects/Raw-House-Hadmatiya/3.jpg" alt="" />
+                </div>
+                <div class="con">
+                  <h6><a href="prime-hotel.html">Interior</a></h6>
+                  <h5><a href="prime-hotel.html">Raw House Raw-House-Hadmatiya</a></h5>
+                  <div class="line"></div>
+                  <a href="prime-hotel.html"><i class="ti-arrow-right"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Services -->
+    <section class="services section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="section-title">Our <span>Services</span></h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="item">
+              <a href="architecture.html">
+                <img src="img/icons/icon-1.png" alt="" />
+                <h5>Architecture</h5>
+                <div class="line"></div>
+                <p>
+                  At Drashya Design Studio, every project is planned from the inside out, where the exterior forms are a result of interior spatial circulation and performance. Our projects are known to have a functional and timeless appeal that retains its design quality over the long run.	
+                </p>
+                <div class="numb">01</div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item">
+              <a href="interior-design.html">
+                <img src="img/icons/icon-2.png" alt="" />
+                <h5>Interior Design</h5>
+                <div class="line"></div>
+                <p>
+                  Our skillful interdisciplinary team works closely with our clients and engages in a diverse array of design styles from contemporary, modern, and classical to Scandinavian or baroque — truly a one-of-its-kind service.                </p>
+                <div class="numb">02</div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="item">
+              <a href="urban-design.html">
+                <img src="img/icons/icon-3.png" alt="" />
+                <h5>3D Modelling</h5>
+                <div class="line"></div>
+                <p>
+                 
+                  Unity Interiors provides top-notch 3D visualization services to bring your design concepts to life with stunning realism. Our team of skilled 3D artists and designers utilizes advanced software and techniques to create immersive visualizations that allow you to fully envision your project.                </p>
+                <div class="numb">03</div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog -->
+    <!-- <section class="bauen-blog section-padding">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="section-title">Current <span>News</span></h2>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <div class="position-re o-hidden">
+                    <img src="img/slider/1.jpg" alt="" />
+                  </div>
+                  <div class="con">
+                    <span class="category">
+                      <a href="blog.html">Architecture </a> - 20.12.2024
+                    </span>
+                    <h5>
+                      <a href="post.html">Modern Architectural Structures</a>
+                    </h5>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="position-re o-hidden">
+                    <img src="img/slider/2.jpg" alt="" />
+                  </div>
+                  <div class="con">
+                    <span class="category">
+                      <a href="blog.html">Interior</a> - 18.12.2024
+                    </span>
+                    <h5><a href="post.html">Modernism in Architecture</a></h5>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="position-re o-hidden">
+                    <img src="img/slider/3.jpg" alt="" />
+                  </div>
+                  <div class="con">
+                    <span class="category">
+                      <a href="blog.html">Urban</a> - 16.12.2024
+                    </span>
+                    <h5><a href="post.html">Postmodern Architecture</a></h5>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="position-re o-hidden">
+                    <img src="img/slider/4.jpg" alt="" />
+                  </div>
+                  <div class="con">
+                    <span class="category">
+                      <a href="blog.html">Planing</a> - 14.12.2024
+                    </span>
+                    <h5>
+                      <a href="post.html">Modern Architecture Buildings</a>
+                    </h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> -->
+    <!-- Promo video - Testiominals -->
+    <section class="testimonials">
+      <div class="background bg-img bg-fixed section-padding pb-0" data-background="img/banner2.jpg"
+        data-overlay-dark="3">
+        <div class="container">
+          <div class="row">
+            <!-- Promo video -->
+            <div class="col-md-6">
+              <div class="vid-area">
+                <!-- <div class="vid-icon">
+                    <a
+                      class="play-button vid"
+                      href="https://youtu.be/RziCmLzpFNY"
+                    >
+                      <svg class="circle-fill">
+                        <circle
+                          cx="43"
+                          cy="43"
+                          r="39"
+                          stroke="#fff"
+                          stroke-width=".5"
+                        ></circle>
+                      </svg>
+                      <svg class="circle-track">
+                        <circle
+                          cx="43"
+                          cy="43"
+                          r="39"
+                          stroke="none"
+                          stroke-width="1"
+                          fill="none"
+                        ></circle>
+                      </svg>
+                      <span class="polygon">
+                        <i class="ti-control-play"></i>
+                      </span>
+                    </a>
+                  </div> -->
+                <div class="cont mt-15 mb-30">
+                  <!-- <h5>View promo video</h5> -->
+                </div>
+              </div>
+            </div>
+            <!-- Testiominals -->
+            <div class="col-md-5 offset-md-1">
+              <div class="testimonials-box animate-box" data-animate-effect="fadeInUp">
+                <div class="head-box">
+                  <h4>What Client's Say?</h4>
+                </div>
+                <div class="owl-carousel owl-theme">
+                  <div class="item">
+                    <span class="quote"><img src="img/quot.png" alt="" /></span>
+                    <p>
+                      Drashya Design Studio has been a game-changer for our interior design needs. 
+                    </p>
+                    <div class="info">
+                      <div class="author-img">
+                       
+                      </div>
+                      <div class="cont">
+                        <h6>Chirag Patel</h6>
+                        <span>Crowne Plaza Owner</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <span class="quote">
+                      <img src="img/quot.png" alt="" />
+                    </span>
+                    <p>
+                     The team took the time to truly understand our vision and turned it into reality with stunning designs.
+                    </p>
+                    <div class="info">
+                      <div class="author-img">
+                      
+                      </div>
+                      <div class="cont">
+                        <h6>Bhumit Bhatasana</h6>
+                        <span>Armada Owner</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <span class="quote">
+                      
+                    </span>
+                    <p>
+                      I highly recommend their services for anyone looking to elevate their interior spaces!
+                    </p>
+                    <div class="info">
+                      <div class="author-img">
+                        <img src="img/team/4.jpg" alt="" />
+                      </div>
+                      <div class="cont">
+                        <h6>Rajan Patel</h6>
+                        <span>Alsa Manager</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Clients -->
+    <section class="clients">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="owl-carousel owl-theme">
+              <div class="clients-logo">
+                <a><img src="img/clients/1.png" alt="" /></a>
+              </div>
+              <div class="clients-logo">
+                <a><img src="img/clients/2.png" alt="" /></a>
+              </div>
+              <div class="clients-logo">
+                <a><img src="img/clients/3.png" alt="" /></a>
+              </div>
+              <div class="clients-logo">
+                <a><img src="img/clients/4.png" alt="" /></a>
+              </div>
+              <div class="clients-logo">
+                <a><img src="img/clients/5.png" alt="" /></a>
+              </div>
+              <div class="clients-logo">
+                <a><img src="img/clients/6.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="main-footer dark">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-30">
+            <div class="item fotcont">
+              <div class="fothead">
+                <h6>Phone</h6>
+              </div>
+              <p>Rahul Bhadja - +91 72858 08571</p>
+              <p>Khushal Panchotiya - +91 90991 90917</p>
+              <p>Smit Bhadja - +91 81402 68377</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-30">
+            <div class="item fotcont">
+              <div class="fothead">
+                <h6>Email</h6>
+              </div>
+              <p>drashyadesignstudio@gmail.com</p>
+            </div>
+          </div>
+          <div class="col-md-4 mb-30">
+            <div class="item fotcont">
+              <div class="fothead">
+                <h6>Our Address</h6>
+              </div>
+              <p>Shop no 34, 4th floor, capital Market, Ravapar, Morbi, Gujarat 363641</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sub-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="text-left">
+								<p class="copy">Copyright © 2024 <span><a style="color:#b19777;" href="https://cypersoft.com" target="_blank">Cypersoft</a></span>. All rights reserved.</p>
+              </div>
+            </div>
+            <div class="col-md-4 abot">
+              <div class="social-icon">
+                <a href="https://www.facebook.com/share/fKzciX3YhXjHqbxA/?mibextid=qi2Omg" target="_blank"><i class="ti-facebook"></i></a>
+                <a href="mailto:drashyadesignstudio@gmail.com" target="_blank"><i class="ti-envelope"></i></a>                
+                <a href="https://www.instagram.com/drashyadesignstudio/?utm_source=qr&igsh=NzBmaTNxOWphb2tu" target="_blank"><i class="ti-instagram"></i></a>
+                <!-- <a href="index.html"><i class="ti-pinterest"></i></a> -->
+              </div>
+            </div>
+            <div class="col-md-4">
+              <p class="right"><a href="#">Terms &amp; Conditions</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- jQuery -->
+  <script src="js/jquery-3.6.3.min.js"></script>
+  <script src="js/jquery-migrate-3.0.0.min.js"></script>
+  <script src="js/modernizr-2.6.2.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/jquery.isotope.v3.0.2.js"></script>
 
-
-  <div class="cursor"></div>
-  <div class="cursor2"></div>
-
-  <script>
-    var cursor = document.querySelector(".cursor");
-    var cursor2 = document.querySelector(".cursor2");
-    document.addEventListener("mousemove", function (e) {
-      cursor.style.cssText = cursor2.style.cssText = "left: " + e.clientX + "px; top: " + e.clientY + "px;";
-    });
-
-
-    class Countdown {
-  constructor(el){
-    this.el = el;
-    this.targetDate = new Date(el.getAttribute("date-time"));
-    this.createCountDownParts()
-    this.countdownFunction();
-    this.countdownLoopId = setInterval(this.countdownFunction.bind(this), 1000)
-  }
-  createCountDownParts(){
-    ["days", "hours", "minutes", "seconds"].forEach(part => {
-      const partEl = document.createElement("div");
-      partEl.classList.add("part", part);
-      const textEl = document.createElement("div");
-      textEl.classList.add("text");
-      textEl.innerText = part;
-      const numberEl = document.createElement("div");
-      numberEl.classList.add("number");
-      numberEl.innerText = 0;
-      partEl.append(numberEl, textEl);
-      this.el.append(partEl);
-      this[part] = numberEl;
-    })
-  }
-
-  countdownFunction(){
-    const currentDate = new Date();    
-    if(currentDate > this.targetDate) return clearInterval(this.intervalId);
-    const remaining = this.getRemaining(this.targetDate, currentDate);
-    Object.entries(remaining).forEach(([part,value]) => {
-      this[part].style.setProperty("--value", value)
-      this[part].innerText = value
-    })  
-  }
-  
-  getRemaining(target, now){
-    let seconds = Math.floor((target - (now))/1000);
-    let minutes = Math.floor(seconds/60);
-    let hours = Math.floor(minutes/60);
-    let days = Math.floor(hours/24);
-    hours = hours-(days*24);
-    minutes = minutes-(days*24*60)-(hours*60);
-    seconds = seconds-(days*24*60*60)-(hours*60*60)-(minutes*60);
-    return { days, hours, minutes, seconds }      
-  }
-
-}
-
-const countdownEls= document.querySelectorAll(".countdown") || [];
-countdownEls.forEach(countdownEl => new Countdown(countdownEl))
-
-  </script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/scrollIt.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.magnific-popup.js"></script>
+  <script src="js/YouTubePopUp.js"></script>
+  <script src="js/before-after.js"></script>
+  <script src="js/vegas.slider.min.js"></script>
+  <script src="js/custom.js"></script>
 </body>
 
 </html>
